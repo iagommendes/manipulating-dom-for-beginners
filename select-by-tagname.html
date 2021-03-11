@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>keeping up with the kardashians</p>
+    <p>the real housewives of beverly hills</p>
+    <p>rupauls drag race</p>
+
+    <button id="btn">click here</button>
+
+    <script>
+        const btn = document.getElementById('btn')
+
+        btn.addEventListener('click', function switchShow() {
+            let shows = document.getElementsByTagName('p');
+            let newShow = shows[1].innerHTML = 'Cobra Kai';
+
+            console.log(newShow)
+        })
+    </script>
+</body>
+
+</html>
