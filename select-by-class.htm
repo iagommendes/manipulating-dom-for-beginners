@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p class="remember">keep trying</p>
+    <p class="remember">don't give up</p>
+    <h1 class="remember">you got it</h1>
+
+    <button id="btn">click here</button>
+
+    <script>
+        var btn = document.getElementById('btn')
+
+        btn.addEventListener('click', function massage() {
+            var message = document.getElementsByClassName("remember");
+            message[2].innerHTML = 'YOU ARE AWESOME :)';
+        })
+    </script>
+</body>
+
+</html>
